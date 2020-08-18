@@ -1,0 +1,324 @@
+
+li {
+    list-style: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h1 {
+    margin: 0px;
+}
+h2 {
+    margin: 0px;
+}
+p {
+    margin: 0;
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+.container  {
+    width: 1770px;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+}
+.header {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 14px;
+}
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+.nav-list {
+    display: flex;
+}
+.nav-list-item:not(:last-child) {
+    margin-right: 70px;
+}
+.nav-list-item:nth-child(3) {
+    margin-right: 98px;   
+}
+.nav-list-item:nth-child(2) {
+    margin-right: 96px;
+}
+.nav-list-item:nth-child(1) {
+    margin-right: 73px;
+}
+.nav-list-link {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+}
+.nav-list-item_search {
+    margin-left: 70px;
+}
+.header-logo {
+    margin-right: auto;
+}
+.nav-list-link_search{
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url(./img/header/Search.svg);
+    background-repeat: no-repeat;
+}
+.nav-list-link_search::after {
+    display: block;
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 23px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.hero_container {
+    margin-bottom: 95px;
+    min-height: 620px;
+    background-image: url(./img/main/first-photo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.9;
+}
+.hero-container-main {
+    padding: 104px 77px;
+}
+.main-title {
+    margin-bottom: 21px;
+    width: 60%;
+    font-size: 70px;
+    font-weight: 800px;
+    line-height: 86px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.main-text {
+    margin-bottom: 121px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 29px;
+    letter-spacing: 0.3px;
+    color: #FFFFFF;
+}
+.main-btn {
+    padding: 25px 37px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    color:#FFFFFF;
+    background-color: #FF9900;
+}
+.info {
+    margin-bottom: 45px;
+}
+.info-title {
+    margin-bottom: 23px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+}
+.info-text {
+    width: 70%;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+}
+.info-span {
+    padding-left: 5px;
+}
+.more {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 122px;
+    min-height: 622px;
+}
+.more-left {
+    position: relative;
+    min-width: 870px;
+    min-height: 622px;
+    background-image: url(./img/info/more_left_back.png);
+    background-repeat: no-repeat;
+}
+.more-left_text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    min-width: 870px;
+    min-height: 176px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+}
+.left-text {
+    position: absolute;
+    padding-top: 40px;
+    margin-left: 51px;
+    padding-bottom: 45px;
+    max-width: 58%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 31px;
+}
+.more-left-btn {
+    position: absolute;
+    bottom: 60px;
+    right: 70px;
+    margin-left: 71px;
+    padding: 17px 34px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 3px solid #FF9900;
+    box-sizing: border-box;
+}
+ .more-right {
+     margin-left: 30px;
+}
+.more-right_card {
+    position: relative;
+    min-width: 868px;
+    min-height: 295px;
+    border: 1px solid; 
+}
+.more-right_card:not(:last-child) {
+    margin-bottom: 28px;
+}
+.more-right-round-first {
+    position: absolute;
+    left: 80px;
+    top: 60px;
+}
+.more-list {
+    position: absolute;
+    top: 70px;
+    left: 299px;
+}
+.more-right-round-second {
+    position: absolute;
+    left: 80px;
+    top: 50px;
+}
+.more-list-title-first {
+    margin-bottom: 8px;
+}
+.more-list-text-first {
+    max-width: 72%;
+    font-size: 16px;
+    line-height: 32px;
+}
+.more-list-title-second {
+    margin-bottom: 5px;
+}
+.more-list-text-second {
+    max-width: 73%;
+    font-size: 16px;
+    line-height: 32px;
+}
+/* Секция 4 */
+.work {
+    margin-bottom: 85px;
+}
+.work-title {
+    margin-bottom: 50px;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 59px;
+    color: #333333;
+}
+.work-list {
+    display: flex;
+    margin-bottom: 45px;
+}
+.work-list-link {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+}
+.work-list-item:not(:last-child) {
+    margin-right: 90px;
+}
+.work-container-title {
+    margin-bottom: 2px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333333;
+}
+.work-container-text {
+    margin-bottom: 62px;
+    max-width: 43%; 
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333;
+}
+.work-text-span {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #333333; 
+    letter-spacing: 0.1px;
+}
+.work-contaner {
+    min-height: 475px;
+   background-image: url(./img/work/work.jpg);
+   background-repeat: no-repeat;
+   background-position: top 10px right;
+}
+.work-btns {
+    display: flex;
+    align-items: center;
+}
+.work-btn-more {
+    padding: 20px 40px;
+    color: #FFFFFF;
+    background-color: #FF9900;
+}
+.work-btn-document {
+    margin-left: 30px;
+    padding: 20px 37px;
+    border: 1px solid #333333;
+}
+/* Секция 5 */
+.question-title {
+    font-weight: normal;
+    margin-bottom: 67px;
+    font-size: 48px;
+    line-height: 59px;
+}
+.question-list-item:nth-child(1) {
+    margin-bottom: 58px;
+}
+.question-text  {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+}
+.question-text {
+    padding-left: 4px;
+}
+.question-list-item{
+    display: flex;
+    align-items: center;
+}
+.question-pic-link {
+    margin-left: auto;
+    padding-right: 4px;
+    padding-top: 2px;
+}
