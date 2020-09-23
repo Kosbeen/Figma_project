@@ -78,12 +78,12 @@ ul {
     display: flex;
     justify-content: space-between;
 }
-.nav-list-item:not(:last-child) {
+/* .nav-list-item:not(:last-child) {
     margin-right: 84px; 
-}
-.nav-list-item:nth-child(5) {
+} */
+/* .nav-list-item:nth-child(5) {
     margin-right: 47px;
-}
+} */
 
 .nav-list-link {
     position: relative;
