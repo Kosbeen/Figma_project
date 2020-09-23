@@ -72,12 +72,11 @@ ul {
 }
 .nav {
     position: relative;
-    display: flex;
-    align-items: center;
-    padding-right: 15px;
+    width: 100%;
 }
 .nav-list {
     display: flex;
+    justify-content: space-between;
 }
 .nav-list-item:not(:last-child) {
     margin-right: 84px; 
@@ -125,7 +124,7 @@ ul {
     stroke: #FF9900;
 }
 .header-logo {
-    margin-right: auto;
+    margin-right: ;
 }
 .burger {
     display: none;
@@ -214,7 +213,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 49%;
+    max-width: 49%;
     background-image: url(./img/info/more_left_back.png);
     background-repeat: no-repeat;
 }
@@ -252,7 +251,7 @@ ul {
 }
  .more-right {
      margin-left: 32px;
-     width: 49%;
+     max-width: 49%;
 }
 .more-right_card_box{
     display: flex;
@@ -315,7 +314,7 @@ ul {
     padding-left: 2px;
 }
 .work-title {
-    margin-bottom: 51px;
+    margin-bottom: 38px;
     font-weight: normal;
     font-size: 48px;
     line-height: 59px;
@@ -323,17 +322,12 @@ ul {
 }
 .work-list {
     display: flex;
+    justify-content: space-between;
+    padding-top: 9px;
+    max-width: 26.5%;
     margin-bottom: 22px;
     position: relative;
-}
-.work-list::before {
-    content: '';
-    position: absolute;
-    display: block;
-    bottom: 31px;
-    width: 466px;
-    height: 3px;
-    background: #CACACA;
+    border-top: 4px solid #CACACA;
 }
 .work-list-item::before {
     content: '';
@@ -358,9 +352,6 @@ ul {
     color: #FF9900;
 }
 
-.work-list-item:not(:last-child) {
-    margin-right: 89px;
-}
 
 .work-container-title {
     margin-bottom: 5px;
@@ -757,14 +748,14 @@ ul {
         .more-right {
             margin-left: auto;
             margin-right: auto;
-            min-width: 925px;
+            max-width: 60%;
         }
         .more-left {
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 40px;
+            max-width: 60%;
             min-height: 648px;
-            min-width: 923px;
             background-image: url(./img/info/middle-size-back.png);
         }
         .info-text {
@@ -924,8 +915,8 @@ ul {
     }
     .more-left {
         margin-bottom: 43px;
-        min-height: 648px;
-        min-width: 923px;
+        min-height: 637px;
+        max-width: 100%;
         background-image: url(./img/info/middle-size-back.png);
     }
     .left-text {
@@ -941,7 +932,7 @@ ul {
     }
     .more-right  {
         margin-left: 0px;
-        width:  100%;
+        max-width: 100%;
     }
     .more-right_card_box {
         margin-bottom: 39px;
@@ -1078,7 +1069,41 @@ ul {
         margin-right: 14px;
     }
 }
+@media (max-width: 880px) {
+    .work-contaner {
+        flex-direction: column-reverse;
+    }
+    .work-container-pic {
+        margin-top: 0;
+        margin-bottom: 39px;
+        min-height: 306px;
+        max-width: 100%;
+        background-image: url(./img/work/work-pic-middle.png);
+        background-size: 100%;
+    }
+    .more-right_card_box {
+    margin-bottom: 39px;
+    padding-right: 26px;
+    padding-top: 42px;
+    padding-left: 291px;
+    padding-bottom: 65px;
+    background-position: top 48% left 15%;
+}   
+.work-list {
+    max-width: 100%;
+}
+.more-right_card_gears {
+    padding-right:26px;
+    padding-left: 291px;
+    background-image: url(./img/info/gears_new_back.png);
+    background-position: top 45% left 15%;
+
+}
+}
 @media (max-width: 768px) {
+    .container {
+        padding: 0px;
+    }
     .header {
         padding-top: 10px;
         padding-bottom: 14px;
@@ -1135,11 +1160,13 @@ ul {
         margin-bottom: 52px;
     }
     .more-left {
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%; 
         background-image: url(./img/info/worker_middle.png);
-        background-size: 72% 100%;
     }
     .more-left_text {
-        max-width: 72%;
+        max-width: 100%;
         padding-top: 25px;
         padding-left: 29px;
         padding-right: 27px;
@@ -1149,14 +1176,12 @@ ul {
         max-width: 66%;
     }
     .more-right_card_box {
-        margin-bottom: 40px;
-        padding-right: 0px;
-        padding-top: 12px;
-        padding-left: 177px;
-        padding-bottom: 35px;
-        max-width: 72%;
-        background-position: top 49% left 6%;
-        background-size: 19% 43%;
+    padding-right: 26px;
+    padding-top: 12px;
+    padding-left: 175px;
+    padding-bottom: 36px;
+    background-position: top 49% left 6%;
+    background-size: 19% 44%;
     }
     .more-list-text-first {
         max-width: 84%;
@@ -1166,7 +1191,7 @@ ul {
         padding-top: 12px;
         padding-left: 177px;
         padding-bottom: 34px;
-        max-width: 72%;
+        max-width: 100%;
         background-position: top 49% left 6%;
         background-size: 17% 43%;
     }
@@ -1193,10 +1218,11 @@ ul {
         margin-left: 31px;
     }
     .work-title {
-        margin-bottom: 48px;
+        margin-bottom: 35px;
     }
     .work-list {
         justify-content: space-between;
+        max-width: 100%;
     }
     .work-list::before {
         width: 670px;
@@ -1277,14 +1303,4 @@ ul {
         margin-top: 15px;
     }
 }
-@media (max-width: 880px) {
-    .work-contaner {
-        flex-direction: column-reverse;
-    }
-    .work-container-pic {
-        margin-top: 0;
-        margin-bottom: 39px;
-        min-height: 306px;
-        background-image: url(./img/work/work-pic-middle.png);
-    }
-}
+
