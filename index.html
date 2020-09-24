@@ -12,9 +12,10 @@
 <body>
     <header class="header">
         <div class="container header-container">
+            <div class="header-nav">
             <a class="header-logo" href="#"> <img class="header-img" src="./img/header/main_logo.png"
                     alt="Логотип компании"></a>
-            <nav class="nav">
+                    <div class="header-btn-nav">
                 <ul class="nav-list">
                     <li class="nav-list-item"><a class="nav-list-link" href="#">О нас</a></li>
                     <li class="nav-list-item"><a class="nav-list-link" href="#">Проекты</a></li>
@@ -32,6 +33,7 @@
             </button>
             <button class="burger"></button>
         </div>
+    </div>
     </header>
     <main class="main container">
         <section class="hero_container">
@@ -44,7 +46,7 @@
                 <button class="main-btn">Заказать расчёт</button>
             </div>
         </section>
-        <section class="info container">
+        <section class="info">
 
             <h2 class="info-title title">О нас</h2>
             <p class="info-text">Также как перспективное планирование создаёт необходимость включения в производственный
@@ -79,7 +81,7 @@
             </div>
         </section>
 
-        <section class="work container">
+        <section class="work">
             <h2 class="work-title title">Как мы работаем</h2>
             <ul class="work-list">
                 <li class="work-list-item"><a class="work-list-link" href="#">1 шаг</a></li>
@@ -87,10 +89,11 @@
                 <li class="work-list-item"><a class="work-list-link" href="#">3 шаг</a></li>
                 <li class="work-list-item"><a class="work-list-link" href="#">4 шаг</a></li>
             </ul>
-            <div class="work-contaner">
+            <div class="work-container">
                 <div class="work-main-container">
                     <div class="work-left">
                         <h3 class="work-container-title">Проводим консультацию</h3>
+                     
                         <p class="work-container-text">
                             Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках
                             спецификации современных стандартов, некоторые особенности внутренней политики будут
@@ -102,17 +105,17 @@
                                 нанотехнологии освещают</span> чрезвычайно интересные особенности картины в целом,
                             однако конкретные выводы, разумеется, призваны к ответу.
                         </p>
-                    </div>
                     <div class="work-btns">
                         <a class="work-btn-more" href="#">Подробнее</a>
                         <a class="work-btn-document" href="#">Договор</a>
                     </div>
                 </div>
-                <div class="work-container-pic">
                 </div>
+                <div class="work-container-pic">
+                
             </div>
         </section>
-        <section class="question container">
+        <section class="question">
             <h2 class="question-title title">Часто задаваемые вопросы</h2>
             <ul class="question-list">
                 <li class="question-list-item">
@@ -143,30 +146,44 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-left-middle">
-                <a class="footer-logo-middle" href="#"> <img class="footer-img" src="./img/footer/footer-logo.png"
-                        alt="Логотип компании"></a>
-                </nav>
-                <ul class="footer-socials-middle">
-                    <li class="footer-socials-icone"><a class="footer-socials-link fb" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link vk" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link insta" href="#"></a></li>
-                </ul>
-            </div>
-
             <div class="footer-left">
+                <div class="footer-logoscreen">
                 <a class="footer-logo" href="#"> <img class="footer-img" src="./img/footer/footer-logo.png"
                         alt="Логотип компании"></a>
-                <p class="footer-text">Высокий уровень вовлечения представителей целевой аудитории является четким
-                    доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет
-                    оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает
-                    широкому кругу (специалистов) участие в формировании стандартных подходов.</p>
+                        
+                        <nav class="footer-list-nav">
+                            <ul class="footer-list">
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">О нас</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Проекты</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Отзывы</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Договор оферты</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Договор подряда</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Конфидециальность</a>
+                                </li>
+                                <li class="footer-list-item">
+                                    <a href="#" class="footer-list-link">Партнёрское соглашение</a>
+                                </li>
+                            </ul>
+                        </nav>
                 <ul class="footer-socials">
                     <li class="footer-socials-icone"><a class="footer-socials-link fb" href="#"></a></li>
                     <li class="footer-socials-icone"><a class="footer-socials-link vk" href="#"></a></li>
                     <li class="footer-socials-icone"><a class="footer-socials-link insta" href="#"></a></li>
                 </ul>
             </div>
+            
+        </div>
             <div class="footer-middle">
                 <h2 class="footer-title">Оставить заявку</h2>
                 <form action="https://jsonplaceholder.typicode.com/posts" target="_blank" method="POST"
@@ -187,71 +204,14 @@
                     </div>
                 </form>
             </div>
-            <div class="footer-right-middle">
-                <ul class="footer-right-left">
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">О нас</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Проекты</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Отзывы</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Договор оферты</a>
-                    </li>
-                </ul>
-
-                <div class="footer-right-right">
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Договор подряда</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Конфидециальность</a>
-                    </li>
-                    <li class="footer-list-item">
-                        <a href="#" class="footer-list-link">Партнёрское соглашение</a>
-                    </li>
-                </div>
-            </div>
             <div class="footer-right">
-                <a class="footer-logo_hidden" href="#"> <img class="footer-img" src="./img/footer/footer-logo-new.png"
-                        alt="Логотип компании"></a>
-                <nav class="footer-list-nav">
-                    <ul class="footer-list">
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">О нас</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Проекты</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Отзывы</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Договор оферты</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Договор подряда</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Конфидециальность</a>
-                        </li>
-                        <li class="footer-list-item">
-                            <a href="#" class="footer-list-link">Партнёрское соглашение</a>
-                        </li>
-                    </ul>
-                </nav>
-                <ul class="footer-socials_hidden">
-                    <li class="footer-socials-icone"><a class="footer-socials-link fb" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link vk" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link insta" href="#"></a></li>
-                </ul>
+                        <p class="footer-text">Высокий уровень вовлечения представителей целевой аудитории является четким
+                            доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет
+                            оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает
+                            широкому кругу (специалистов) участие в формировании стандартных подходов.</p>
             </div>
         </div>
         </div>
     </footer>
 </body>
-
 </html>
