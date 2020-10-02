@@ -12,10 +12,9 @@
 <body>
     <header class="header">
         <div class="container header-container">
-            <div class="header-nav">
-            <a class="header-logo" href="#"> <img class="header-img" src="./img/header/main_logo.png"
-                    alt="Логотип компании"></a>
-                    <div class="header-btn-nav">
+            <nav class="header-nav">
+            <a href="#" class="header-logo"> <img class="header-img" src="./img/header/main_logo.png"
+                    alt="Логотип компании"> </a>
                 <ul class="nav-list">
                     <li class="nav-list-item"><a class="nav-list-link" href="#">О нас</a></li>
                     <li class="nav-list-item"><a class="nav-list-link" href="#">Проекты</a></li>
@@ -33,11 +32,12 @@
             </button>
             <button class="burger"></button>
         </div>
-    </div>
     </header>
-    <main class="main container">
-        <section class="hero_container">
-            <div class="hero-container-main">
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-container">
+            <div class="hero-container-main ">
                 <h1 class="main-title">
                     Проектные решения любой сложности
                 </h1>
@@ -45,9 +45,11 @@
                     остаются уделом проектантов</p>
                 <button class="main-btn">Заказать расчёт</button>
             </div>
+        </div>
+        </div>
         </section>
         <section class="info">
-
+            <div class="container">
             <h2 class="info-title title">О нас</h2>
             <p class="info-text">Также как перспективное планирование создаёт необходимость включения в производственный
                 план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей
@@ -79,15 +81,17 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
         <section class="work">
+            <div class="container">
             <h2 class="work-title title">Как мы работаем</h2>
-            <ul class="work-list">
-                <button class="work-list-item"><span class="work-span-btn">1</span> шаг</button>
-                <button class="work-list-item">2 шаг</button>
-                <button class="work-list-item">3 шаг</button>
-                <button class="work-list-item">4 шаг</button>
-            </ul>
+            <div class="work-list">
+                <button class="work-list-item work-span-btn">1 шаг</button>
+                <button class="work-list-item work-span-btn">2 шаг</button>
+                <button class="work-list-item work-span-btn">3 шаг</button>
+                <button class="work-list-item work-span-btn">4 шаг</button>
+            </div>
             <div class="work-container">
                 <div class="work-main-container">
                     <div class="work-left">
@@ -109,46 +113,28 @@
                     </div>
                 </div>
                 </div>
-                <div class="work-container-pic">
-                
+                <div class="work-container-pic"></div>
             </div>
+        </div>
         </section>
         <section class="question">
+            <div class="container question-container">
             <h2 class="question-title title">Часто задаваемые вопросы</h2>
-            <ul class="question-list">
-                <li class="question-list-item">
-                    <span class="question-text">Из чего формируется конечная стоимость проекта?</span>
-                    <button class="question-pic-link"></button>
-                </li>
-                <li class="question-list-item">
-                    <span class="question-text">У меня есть свой проект. Сможем ли мы его доработать /
-                        реализовать?</span>
-                    <button class="question-pic-link"></button>
-                </li>
-                <li class="question-list-item">
-                    <span class="question-text">Я выбираю между разными компаниями. В чём ваше отличие?</span>
-                    <button class="question-pic-link"></button>
-                </li>
-                <li class="question-list-item">
-                    <span class="question-text">Могу ли я делегировать вам работу / согласование с подрядчиком /
-                        организацией?</span>
-                    <button class="question-pic-link"></button>
-                </li>
-                <li class="question-list-item">
-                    <span class="question-text">Могу ли я вернуть деньги на каком-либо из этапов работ?</span>
-                    <button class="question-pic-link"></button>
-                </li>
-            </ul>
+                    <button class="question-pic-link">Из чего формируется конечная стоимость проекта?</button>
+                    <button class="question-pic-link">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
+                    <button class="question-pic-link">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+                    <button class="question-pic-link">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
+                    <button class="question-pic-link">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+                </div>
         </section>
     </main>
 
     <footer class="footer">
-        <div class="container footer-container">
+        <div class=" container footer-container">
             <div class="footer-left">
                 <div class="footer-logoscreen">
                 <a class="footer-logo" href="#"> <img class="footer-img" src="./img/footer/footer-logo.png"
                         alt="Логотип компании"></a>
-                        
                             <ul class="footer-list">
                                 <li class="footer-list-item">
                                     <a href="#" class="footer-list-link">О нас</a>
@@ -205,7 +191,6 @@
                             оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает
                             широкому кругу (специалистов) участие в формировании стандартных подходов.</p>
             </div>
-        </div>
         </div>
     </footer>
 </body>
