@@ -6,15 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>Евклид</title>
 </head>
 
 <body>
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
-            <a href="#" class="header-logo"> <img class="header-img" src="./img/header/main_logo.png"
-                    alt="Логотип компании"> </a>
+            <a aria-label="Логотип компании" class="header-logo"> <img class="header-img" src="./img/header/main_logo.png" alt="Логотип компании"></a>
                 <ul class="nav-list">
                     <li class="nav-list-item"><a class="nav-list-link" href="#">О нас</a></li>
                     <li class="nav-list-item"><a class="nav-list-link" href="#">Проекты</a></li>
@@ -23,7 +22,7 @@
                     <li class="nav-list-item"><a class="nav-list-link" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <button class="nav-list-item_search">
+            <button class="nav-list-item_search" aria-label="Поиск">
                 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="19.5138" y="18.5495" width="8" height="2" transform="rotate(45 19.5138 18.5495)"
                         fill="#333333" />
@@ -64,22 +63,28 @@
                     <div class="more-left_text">
                         <p class="left-text">Принимая во внимание показатели успешности, перспективное планирование
                             способствует подготовке и реализации новых принципов.</p>
-                        <a class="more-left-btn" href="#">Подробнее</a>
+                        <a class="more-left-btn"  href="#" aria-label="Подробная информация">Подробнее</a>
                     </div>
                 </div>
                 <div class="more-right">
                     <div class="more-right_card_box">
+                        <div class="more-right-icons_box"></div>
+                        <div class="more-right_box_round">
                         <h3 class="more-list-title-first">Консультация с широким активом</h3>
                         <p class="more-list-text-first">А также свежий взгляд на привычные вещи - безусловно открывает
                             новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
                     </div>
+                </div>
                     <div class="more-right_card_gears">
+                        <div class="more-right_icons_gears"></div>
+                        <div class="more-right_gears_round">
                         <h3 class="more-list-title-second">В своём стремлении повысить</h3>
                         <p class="more-list-text-second">Качество жизни, они забывают, что сплочённость команды
                             профессионалов представляет собой интересный эксперимент проверки прогресса
                             профессионального сообщества.</p>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         </section>
@@ -108,12 +113,11 @@
                             однако конкретные выводы, разумеется, призваны к ответу.
                         </p>
                     <div class="work-btns">
-                        <a class="work-btn-more" href="#">Подробнее</a>
-                        <a class="work-btn-document" href="#">Договор</a>
+                        <button class="work-btn-more" aria-label="Подробная информация" href="#">Подробнее</button>
+                        <button class="work-btn-document" aria-label="Ознакомиться с договором" href="#">Договор</button>
                     </div>
                 </div>
                 </div>
-                <div class="work-container-pic"></div>
             </div>
         </div>
         </section>
@@ -128,12 +132,11 @@
                 </div>
         </section>
     </main>
-
     <footer class="footer">
         <div class=" container footer-container">
             <div class="footer-left">
                 <div class="footer-logoscreen">
-                <a class="footer-logo" href="#"> <img class="footer-img" src="./img/footer/footer-logo.png"
+                <a class="footer-logo" href="#"><img class="footer-img" src="./img/footer/footer-logo.png"
                         alt="Логотип компании"></a>
                             <ul class="footer-list">
                                 <li class="footer-list-item">
@@ -160,9 +163,9 @@
                             </ul>
                         </div>
                 <ul class="footer-socials">
-                    <li class="footer-socials-icone"><a class="footer-socials-link fb" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link vk" href="#"></a></li>
-                    <li class="footer-socials-icone"><a class="footer-socials-link insta" href="#"></a></li>
+                    <li class="footer-socials-icone"><a class="footer-socials-link fb" aria-label="Фейсбук" href="#"></a></li>
+                    <li class="footer-socials-icone"><a class="footer-socials-link vk" aria-label="Вконтакте" href="#"></a></li>
+                    <li class="footer-socials-icone"><a class="footer-socials-link insta" aria-label="Инстаграм" href="#"></a></li>
                 </ul>
         </div>
             <div class="footer-middle">
@@ -178,8 +181,7 @@
                         <button type="submit" class="footer-btn">
                             Отправить данные
                         </button>
-
-                        <label class="footer-label" for="footer-agreement"> <input type="checkbox" required checked
+                        <label aria-checked="true" class="footer-label" for="footer-agreement"> <input type="checkbox" required checked
                                 id="footer-agreement" class="footer-agree"><span class="footer-span-agree">Согласие на
                                 обработку данных</span></label>
                     </div>
